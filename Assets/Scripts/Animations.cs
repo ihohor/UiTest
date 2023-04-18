@@ -1,7 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
 
-
 [RequireComponent(typeof(Lives))]
 public class Animations : MonoBehaviour
 {
@@ -32,21 +31,25 @@ public class Animations : MonoBehaviour
         _lives.ZeroLives -= EmptyState;
     }
 
-    private void FullState() => ChangeButtonsStates(new Vector2(120, 120), 
-        new Vector3(0, -50, 0), new Vector2(100, 50), 
-        new Vector3(0, -50, 0), Vector2.zero, new Vector3(0, -900, 0));
+    private void FullState() => ChangeButtonsStates
+        (new Vector2(120, 120), new Vector3(0, -50, 0),
+        Vector2.zero, new Vector3(0, -900, 0),
+        new Vector2(100, 50), new Vector3(0, -50, 0));
 
-    private void MiddleState() => 
-        ChangeButtonsStates(Vector2.zero, Vector3.zero,
+    private void MiddleState() => ChangeButtonsStates
+        (Vector2.zero, Vector3.zero,
         Vector2.zero, Vector3.zero,
         Vector2.zero, Vector3.zero);
 
-    private void EmptyState() => ChangeButtonsStates(Vector2.zero, Vector3.zero, 
+    private void EmptyState() => ChangeButtonsStates
+        (Vector2.zero, Vector3.zero, 
         new Vector2(100, 50), new Vector3(0, 150, 0),
         Vector2.zero, new Vector3(0, -1000, 0));
     
-    private void ChangeButtonsStates(Vector2 heartSize, Vector3 heartPos, 
-        Vector2 blueButtonSize, Vector3 blueButtonPos, Vector2 greenButtonSize, Vector3 greenButtonPos)
+    private void ChangeButtonsStates
+        (Vector2 heartSize, Vector3 heartPos, 
+        Vector2 blueButtonSize, Vector3 blueButtonPos, 
+        Vector2 greenButtonSize, Vector3 greenButtonPos)
     {
         _heart.DOSizeDelta(heartSize, ChangeButtonDuration, true);
         _heart.DOAnchorPos(heartPos, ChangeButtonDuration, true);

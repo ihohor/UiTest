@@ -22,6 +22,8 @@ public class WindowPop : MonoBehaviour
     private void Awake()
     {
         _darkPanelButton = _darkPanel.GetComponent<Button>();
+        _darkPanel.raycastTarget = false;
+        _darkPanelButton.interactable = false;
     }
 
     private void OnEnable()

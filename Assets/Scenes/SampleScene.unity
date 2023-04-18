@@ -1599,10 +1599,10 @@ RectTransform:
   m_Father: {fileID: 1763221962}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 3.5, y: -1539.0486}
-  m_SizeDelta: {x: 867.1, y: 977.15}
+  m_AnchorMin: {x: 0.27881253, y: 0.04412963}
+  m_AnchorMax: {x: 0.7261872, y: 0.95600003}
+  m_AnchoredPosition: {x: -3.6402588, y: -2080.054}
+  m_SizeDelta: {x: 7.0999756, y: -7.8499756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618618429
 MonoBehaviour:
@@ -2057,7 +2057,6 @@ MonoBehaviour:
   _heart: {fileID: 602567511}
   _greenButton: {fileID: 31796949}
   _blueButton: {fileID: 910648422}
-  _image: {fileID: 0}
 --- !u!222 &793428795988229380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2438,7 +2437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.27881253, y: 0.04412963}
   m_AnchorMax: {x: 0.7261872, y: 0.95600003}
-  m_AnchoredPosition: {x: -3.4400024, y: -2079.6238}
+  m_AnchoredPosition: {x: -3.4400024, y: -2079.6243}
   m_SizeDelta: {x: 6.880005, y: -7.9299927}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7191225395187211754
@@ -2523,9 +2522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dailyBonusWindow: {fileID: 6754696622745780866}
-  _firstPanelAlpha: {fileID: 301493785}
   _claimButton: {fileID: 6316456131746039068}
-  _firstPanel: {fileID: 301493783}
+  _firstPanel: {fileID: 301493785}
 --- !u!224 &8035516828006738189
 RectTransform:
   m_ObjectHideFlags: 0
